@@ -1,0 +1,65 @@
+.banner{
+    width: 100vw;
+    display: flex;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: white;
+}
+.text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10vmax 5vmax;
+    justify-content: space-between;
+}
+.text>h3{
+    background-image: linear-gradient(90deg,red,blue);
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    font:1000 4vmax "Alkalami";
+    font-weight: bolder;
+}
+.text>h1{
+    font: 700 7vmax "Roboto";
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.text>p{
+    font: 1000 1.2vmax "Roboto";
+    margin: 1vmax 0;
+    text-transform: capitalize;
+}
+.text>button{
+    background-color: blue;
+    border: none;
+    padding: 1.2vmax 2.5vmax;
+    border-radius: 20px;
+    font: 600 1.5vmax "Roboto";
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.59);
+    cursor: pointer;
+}
+.banner>img{
+    width: 45%;
+}
+@media screen and (max-width:780px) {
+    .banner{
+        flex-direction: column-reverse;
+        justify-items: center;
+        align-items: center;
+    }
+    .banner>img{
+        width: 100%;
+    }
+    .text{
+        align-self: flex-start;
+        width: 100%;
+        padding: 1vmax;
+    }
+    .text>p{
+        text-align: center;
+        font: 800 1.5vmax "Roboto";
+    }
+}

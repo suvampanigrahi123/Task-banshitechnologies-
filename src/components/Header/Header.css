@@ -1,0 +1,153 @@
+.Header{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100vw;
+    overflow: hidden;
+}
+.pre-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0.7vmax 5vmax;
+}
+.pre-header>div>p{
+    font: 600 1vmax "Roboto";
+    transition: all 0.5s;
+    color: #534f4f;
+}
+.pre-header>div>p:hover{
+    color: tomato;
+    cursor: pointer;
+}
+.contactlogo{
+    width: 1.5vmax;
+    cursor: pointer;
+    margin: 0 0.5vmax;
+    transition: all 0.1s;
+}
+.contactlogo:hover{
+    transform: scale(1.1);
+}
+.pre-header>div:first-child{
+    display: flex;
+    align-items: center;
+}
+.line{
+    height: 1px;
+    width: 100vw;
+    max-width: 100vw;
+    background-color: grey;
+}
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7vmax 5vmax;
+    text-align: center;
+}
+.logo>img{
+    width: 8vmax;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu>li{
+    list-style: none;
+    margin: 0 0.5vmax;
+    font: 500 1.1vmax "Roboto";
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.searchbar>img{
+    height: 1vmax;
+    position: absolute;
+    left: 2%;
+    margin-right: 0.5vmax;
+}
+.searchbar>input{
+    padding: 0.6vmax 1.7vmax;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.6768);
+    font: 600 1vmax "Roboto";
+}
+.icons{
+    display: flex;
+}
+.icons>img{
+    height: 1.5vmax;
+    margin: 0 0.5vmax;
+}
+.ham-burger{
+    display: none;
+}
+.ham-burger div{
+    width: 1.9vmax;
+    height: 2px;
+    background-color: #534f4f;
+    margin: 0.3vmax 0;
+}
+@media screen and (max-width:800px) {
+    .post-header,.pre-header{
+        padding: 0.7vmax 2vmax;
+    }
+    .icons>img{
+        height: 2vmax;
+    }
+    .searchbar>img{
+        left: 1%;
+        height: 2vw;
+    }
+    .searchbar>input{
+        font: 600 2vw "Roboto";
+        padding-left: 4vw;
+    }
+    .menu{
+        flex-direction: column;
+        position: absolute;
+        top: 8vh;
+        background: gray;
+        width: 100vw;
+        transition: all 0.5s;
+    }
+    .left-100{
+        left: -100vw;
+    }
+    .left-0{
+        left: 0;
+    }
+    .menu>li{
+        margin: 1.3vmax 0;
+        color: white;
+    }
+    .ham-burger{
+        display: block;
+        margin: 1.5vmax;
+        cursor: pointer;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width:520px) {
+    .post-header,.pre-header{
+        padding: 0.7vmax 0;
+    }
+    .pre-header>div>p{
+        font: 500 2.2vw "Roboto";
+    }
+    .searchbar>input{
+        font: 500 3vw "Roboto";
+    }
+    .searchbar>img{
+        left: 1%;
+        height: 2.5vw;
+    }
+}

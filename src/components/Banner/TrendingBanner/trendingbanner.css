@@ -1,0 +1,72 @@
+.trendingBanner{
+    padding: 4vmax;
+    /* background-color: #a7d1ee; */
+    position: relative;
+}
+.trendingBanner::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-image: url('https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29sb3JmdWwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    opacity: 0.5;
+}
+.trendingBanner>h1{
+    font: bolder 2.5vmax "Alkalami";
+    text-align: center;
+    color: blue;
+    z-index: 10;
+    position: relative;
+}
+.trendingBanner>div{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.card{
+    display: flex;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.56);
+    padding: 1.7vmax;
+    margin: 1.5vmax;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.card>div{
+    display: flex;
+    flex-direction: column;
+}
+.card>div>p{
+    font: 900 1.8vmax "Alkalami";
+    color: #b80056;
+}
+.card>div>span{
+    font: 700 1.5vmax "Roboto";
+    margin: 0.5vmax 0;
+}
+.card>div>button{
+    padding: 1vmax 1.5vmax;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    font: 900 1.2vmax "Roboto";
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card>img{
+    height: 12vmax;
+    width: 12vmax;
+}
+.card:hover{
+    transform: translateY(-1.3vmax);
+    cursor: pointer;
+}
+@media screen and (max-width:700px) {
+    .trendingBanner>div{
+        flex-direction: column;
+    }
+}

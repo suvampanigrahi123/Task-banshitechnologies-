@@ -1,0 +1,46 @@
+.collections{
+    margin: auto;
+    padding: 2vmax 15vw;
+}
+.collections>h1{
+    text-align: center;
+    color: blue;
+    font: bolder 1.8vmax "Alkalami";
+}
+.collections>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.collection-item{
+    height: 18vmax;
+    width: 15vmax;
+    margin:1.2vmax;
+    padding: 0.5vmax;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.56);
+    border-radius: 16px;
+    transition: all 0.5s;
+}
+.collection-item:hover{
+    transform: translateY(-1vmax);
+    cursor: pointer;
+}
+.collection-item>img{
+    height: 18vmax;
+    width: 15vmax;
+    margin: 1vmax 0;
+}
+.collection-item>p{
+    font: bold 1.1vmax "Roboto";
+    color: #b80056;
+    text-transform: capitalize;
+}
+@media screen and (max-width:870px){
+    .collection-item{
+        margin-bottom: 4vmax;
+    }
+    .collection-item>p{
+        font: 900 1.4vmax "Roboto";
+    }  
+}

@@ -1,0 +1,62 @@
+.Products{
+    margin: auto;
+    padding: 2.5vmax 10vw;
+}
+.Products-headings{
+    display: flex;
+    justify-content: space-between;
+}
+.Products-headings>h1{
+    color: darkblue;
+    font: 900 2vmax "Alkalami";
+    font-weight: bolder;
+    cursor: pointer;
+}
+.Products-headings>div{
+    display: flex;
+}
+.Products-headings>div>h3{
+    font: 900 1.4vmax "Roboto";
+    color: #514b4b;
+    font-weight: lighter;
+    margin-right: 1.2vmax;
+    cursor: pointer;
+    padding: 0.4vmax;
+    transition: all 0.4s;
+}
+.Products-headings>div>h3:active{
+    color: #b80056;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5vmax 0;
+}
+.image-container{
+    width: 15vmax;
+    height: 18vmax;
+    margin: 0.8vmax;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.56);
+    border-radius: 16px;
+    transition: all 0.5s;
+}
+.image-container:hover{
+    transform: translateY(-1vmax);
+    cursor: pointer;
+}
+.image-container>img{
+    height: 18vmax;
+}
+@media screen and (max-width:600px) {
+    .Products{
+        margin: auto;
+        padding: 2vw 3vw;
+    }
+    .Products-headings>div>h3{
+        font: 900 3vw "Roboto";
+    }
+}
